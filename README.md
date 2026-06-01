@@ -198,3 +198,5 @@ Se non serve l'integrazione con OpenAIRE/`data.europa.eu`:
 - Estensione DCAT-AP_IT: [Geosolutions — ckanext-dcatapit](https://github.com/geosolutions-it/ckanext-dcatapit)
 - OAI-PMH: [tlmat-unican — ckanext-oai-pmh-server](https://github.com/tlmat-unican/ckanext-oai-pmh-server)
 - Immagini base CKAN: [ckan/ckan-docker-base](https://github.com/ckan/ckan-docker-base)
+
+- Progetto e personalizzazione a cura di @piersoft (Francesco Piero Paolicelli)
