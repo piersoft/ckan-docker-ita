@@ -1,7 +1,6 @@
 # CKAN Docker per l'Italia (DEMO)
 
 > [!NOTE]
-> Progetto a **scopo dimostrativo**: non è una repository ufficiale CKAN.
 > Stack CKAN **2.10.9** + PostgreSQL **16** + Solr **9** + Redis + NGINX, già
 > predisposto per le funzionalità open data italiane. Pensato per essere
 > provato in locale e poi spostato su un dominio reale cambiando una sola
