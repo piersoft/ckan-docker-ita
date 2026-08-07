@@ -110,4 +110,4 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 RUN pip3 install setuptools==80
-
+RUN pip install --no-cache-dir -U certifi
