@@ -1,4 +1,4 @@
-FROM ckan/ckan-base:2.10-py3.10-v20251029 AS ckan
+FROM ckan/ckan-base:2.10.10-py3.10 AS ckan
 
 USER root
 
@@ -77,7 +77,7 @@ COPY patches/language_selector.html ${APP_DIR}/src/ckan/ckan/templates/snippets/
 COPY patches/util.py ${APP_DIR}/src/ckan/ckan/views/util.py
 
 #FIX per XLOADER per il comando ckan xloader status. Consigliato:
-COPY patches/command.py /usr/lib/python3.10/site-packages/ckanext/xloader/command.py
+COPY patches/command.py /usr/local/lib/python3.10/site-packages/ckanext/xloader/command.py
 
 # Min length resource = 5
 COPY patches/validators.py ${APP_DIR}/src/ckan/ckan/logic/validators.py
