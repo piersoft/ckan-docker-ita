@@ -1,5 +1,5 @@
 /* =============================================================
-   piersoftckan.biz — CSS custom
+   CSS custom
    Revisione accessibilità WCAG 2.1 AA / AgID
    Aprile 2026
    
@@ -699,7 +699,7 @@ flex-basis: calc(100% - 130px - 1.25rem);
   padding: 0.25rem 0;
 }
 
-/* Blocco "Fatto con CKAN / rebuilt by Piersoft" */
+/* Blocco "Fatto con CKAN / rebuilt by Piersoft per AgID" */
 .site-footer .attribution p {
   font-size: 0.875rem;
   color: #003d7a !important;
