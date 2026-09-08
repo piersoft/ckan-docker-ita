@@ -71,7 +71,7 @@ Eseguire i comandi **in ordine**, aspettando il completamento di ciascuno.
 1. Clonare e preparare il `.env`:
 
    ```sh
-   git clone https://github.com/piersoft/ckan-docker.git
+   git clone https://github.com/piersoft/ckan-docker-ita.git
    cd ckan-docker
    cp .env.example .env
    ```
