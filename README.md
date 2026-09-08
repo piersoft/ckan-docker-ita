@@ -43,7 +43,7 @@ Variabili chiave:
 
 ### Demo locale vs dominio reale
 
-Basta impostare `CKAN_SITE_URL` — **non c'è più alcun dominio scritto nel codice**.
+Basta impostare `CKAN_SITE_URL` 
 
 - HTTP locale: `CKAN_SITE_URL=http://localhost:8080`
 - HTTPS locale: `CKAN_SITE_URL=https://localhost:8443`
