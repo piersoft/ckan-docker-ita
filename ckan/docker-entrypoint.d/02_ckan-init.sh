@@ -60,6 +60,7 @@ ckan config-tool $CKAN_INI "ckanext.dcat.normalize_ckan_format = true"
 ckan config-tool $CKAN_INI "geonames.username = ${GEONAMES_USERNAME:-demo}"
 ckan config-tool $CKAN_INI "ckanext.dcat.clean_tags = True"
 ckan config-tool $CKAN_INI "ckan.uploads_enabled = True"
+ckan config-tool $CKAN_INI "ckan.auth.public_user_details = false"
 
 
 
