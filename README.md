@@ -9,7 +9,7 @@
 
 ## Cosa include
 
-- **DCAT-AP_IT** — estensione `ckanext-dcatapit` (Geosolutions) adeguata a CKAN 2.10.9.
+- **DCAT-AP_IT** — estensione `ckanext-dcatapit` (Geosolutions) adeguata a CKAN 2.10.10.
 - **OAI-PMH** — `ckanext-oai-pmh-server` (con supporto DataCite/OpenAIRE).
 - **Harvesting** — `ckanext-harvest` + harvester CKAN, RDF e DCAT-JSON.
 - **Linked Open Data / RDF** — `ckanext-dcat` (profili `euro_dcat_ap_2`, `it_dcat_ap`)
