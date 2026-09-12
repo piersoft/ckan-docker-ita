@@ -1,4 +1,4 @@
-# CKAN Docker per l'Italia (DEMO)
+# CKAN Docker per l'Italia
 
 > [!NOTE]
 > Stack CKAN **2.10.10** + PostgreSQL **16** + Solr **9** + Redis + NGINX, già
