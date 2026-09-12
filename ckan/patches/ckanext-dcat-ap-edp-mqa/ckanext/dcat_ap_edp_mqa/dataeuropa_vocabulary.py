@@ -46,7 +46,7 @@ class DataEuropaVocabularyBuilder:
             "https://gitlab.com/dataeuropa/vocabularies/-/raw/master/piveau-machine-readable-format.rdf",
         ],
         prefix="http://publications.europa.eu/resource/authority/file-type/",
-        filename="/srv/app/patches/edp-vocabularies.rdf”",
+        filename="/srv/app/patches/edp-vocabularies.rdf",
     ):
         if not self.__instance:
             # Create local file
