@@ -664,9 +664,8 @@ class EuropeanDCATAPProfile(RDFProfile):
             if resource_dict.get('license'):
              resource_dict['license']=resource_dict['license'].replace('https://w3id.org/italia/controlled-vocabulary/licences/C1_Unknown','http://creativecommons.org/licenses/by/4.0/')
              resource_dict['license']=resource_dict['license'].replace('https://w3id.org/italia/controlled-vocabulary/licences/B11_CCBYNC40','http://creativecommons.org/licenses/by/4.0/')
-            if 'c_g273' in dataset_dict.get('holder_identifier'):
-              resource_dict['access_url']=resource_dict['download_url']
-            if 'inps' in dataset_dict.get('holder_identifier'):
+            holder_id = dataset_dict.get('holder_identifier') or ''
+            if ('c_g273' in holder_id or 'inps' in holder_id) and resource_dict.get('download_url'):
               resource_dict['access_url']=resource_dict['download_url']
             if not resource_dict.get('rights'):
                 resource_dict['rights']="http://publications.europa.eu/resource/authority/access-right/PUBLIC"
