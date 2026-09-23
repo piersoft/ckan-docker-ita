@@ -40,6 +40,9 @@ config = toolkit.config
 
 DISTRIBUTION_LICENSE_FALLBACK_CONFIG = "ckanext.dcat.resource.inherit.license"
 PREF_LANDING= config.get('ckanext.dcat.base_uri')
+DISTRIBUTION_STATUS_COMPLETED = (
+       "http://publications.europa.eu/resource/authority/distribution-status/COMPLETED"
+   )
 
 class EuropeanDCATAPProfile(RDFProfile):
     """
@@ -669,7 +672,9 @@ class EuropeanDCATAPProfile(RDFProfile):
               resource_dict['access_url']=resource_dict['download_url']
             if not resource_dict.get('rights'):
                 resource_dict['rights']="http://publications.europa.eu/resource/authority/access-right/PUBLIC"
-
+            if not resource_dict.get('status') and (resource_dict.get('url') or '').strip():
+                resource_dict['status'] = DISTRIBUTION_STATUS_COMPLETED
+                
             self._add_triples_from_dict(resource_dict, distribution, items)
 
 
