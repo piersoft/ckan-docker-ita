@@ -10,6 +10,7 @@ from flask import Blueprint
 from routes.mapper import SubMapper
 
 import ckanext.dcatapit.helpers as helpers
+import ckanext.dcatapit.edp_mqa as edp_mqa
 import ckanext.dcatapit.interfaces as interfaces
 import ckanext.dcatapit.schema as dcatapit_schema
 import ckanext.dcatapit.validators as validators
@@ -259,6 +260,7 @@ class DCATAPITPackagePlugin(plugins.SingletonPlugin, toolkit.DefaultDatasetForm,
             'get_localized_subtheme': helpers.get_localized_subtheme,
             'dcatapit_enable_form_tabs': helpers.get_enable_form_tabs,
             'dcatapit_get_icustomschema_fields': helpers.get_icustomschema_fields,
+            'dcatapit_edp_mqa': edp_mqa.edp_mqa,
         }
 
         if MLR:
